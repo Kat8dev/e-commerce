@@ -28,13 +28,13 @@ const UserSchema = new Schema(
     isAdmin: {
       type: Boolean,
       default: false,
-    }
+    },
   },
   {
     timestamps: true,
   }
 );
 
-const User = model("User", UserSchema);
+const User = model('User', UserSchema);
 
 export default User;
