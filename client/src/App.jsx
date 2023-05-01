@@ -1,13 +1,13 @@
-
-import './App.css'
+import Home from './pages/home/home';
+import { GlobalStyle } from './styles';
 
 function App() {
-
   return (
     <>
-     <div>hello</div>
+      <GlobalStyle />
+      <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

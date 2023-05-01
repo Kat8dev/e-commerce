@@ -13,7 +13,7 @@ const UserSchema = new Schema(
     email: {
       type: String,
       required: true,
-      unique: true
+      unique: true,
     },
     password: {
       type: String,
@@ -25,6 +25,10 @@ const UserSchema = new Schema(
     desc: {
       type: String,
     },
+    isAdmin: {
+      type: Boolean,
+      default: false,
+    }
   },
   {
     timestamps: true,
