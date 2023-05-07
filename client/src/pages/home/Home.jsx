@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react';
 import Body from '../../components/organisms/layout/Body';
 import axios from 'axios';
 
-// 'http://localhost:8080/products'
+// https://e-commerce-ietl.onrender.com/
 
 function Home() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     const getAllProduct = async () => {
-      const res = await axios.get('http://localhost:8080/products');
+      const res = await axios.get('https://e-commerce-ietl.onrender.com/products');
       setProducts(res.data);
     };
 
