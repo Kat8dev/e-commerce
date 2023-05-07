@@ -19,14 +19,18 @@ const ProductSchema = new Schema(
       type: Array,
     },
     size: {
-      type: String,
+      type: Array,
     },
     color: {
-      type: String,
+      type: Array,
     },
     price: {
       type: Number,
       required: true,
+    },
+    inStock: {
+      type: Boolean,
+      default: true,
     },
   },
   {
@@ -34,6 +38,6 @@ const ProductSchema = new Schema(
   }
 );
 
-const Product = model("Product", ProductSchema);
+const Product = model('Product', ProductSchema);
 
 export default Product;
