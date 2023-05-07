@@ -9,7 +9,9 @@ function Home() {
 
   useEffect(() => {
     const getAllProduct = async () => {
-      const res = await axios.get('https://e-commerce-ietl.onrender.com/products');
+      const res = await axios.get(
+        'https://e-commerce-ietl.onrender.com/products'
+      );
       setProducts(res.data);
     };
 
